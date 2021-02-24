@@ -11,11 +11,34 @@
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script>
         var vm = new Vue({
+            // option : key: 'value' 형태
             el: '#app',
             data: {
                 message: 'hi'
+            },
+            methods: {
+
+            },
+            created: function() {
+
             }
         });
+        // 위의 형태를 공식 다큐먼트에서 추천함.
+        // 아래와 같이도 가능
+
+        // var options = {
+        //     // key: 'value' 형태
+        //     el: '#app',
+        //     data: {
+        //         message: 'hi'
+        //     },
+        //     methods: {
+
+        //     },
+        // }
+
+        // 생성자 안에 객체 들어감
+        // var vm = new Vue(options);
 
         //  함수 앞이 대문자다 암묵적으로 생성자 함수
         //  function Person(name, job) {
